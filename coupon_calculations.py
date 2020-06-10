@@ -16,5 +16,7 @@ def calculate_order(price, cash_coupon, percent_coupon):
         return round(total, 2)
 
 
+
+
 if __name__ == '__main__':
-    pass
+    print(calculate_order(15.95, 5, .10))
