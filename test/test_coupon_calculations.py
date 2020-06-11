@@ -6,7 +6,7 @@ Testing calculated calculations..
 """
 import unittest
 
-from TOP3.coupon_calculations import calculate_order
+from coupon_calculations import calculate_order
 
 
 class MyTestCase(unittest.TestCase):
