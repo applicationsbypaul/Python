@@ -23,7 +23,6 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(calculate_order(8.92, 10, .20), 13.51)
 
     # Testing between 10 and 30
-
     def test_coupon_calculation_over_10_under_301(self):
         self.assertEqual(calculate_order(15.95, 5, .10), 18.4)
 
@@ -41,6 +40,25 @@ class MyTestCase(unittest.TestCase):
 
     def test_coupon_calculation_over_10_under_306(self):
         self.assertEqual(calculate_order(27.62, 10, .20), 22.89)
+
+    # Testing between 30 and 50
+    def test_coupon_calculation_over_30_under_501(self):
+        self.assertEqual(calculate_order(15.95, 5, .10), False)
+
+    def test_coupon_calculation_over_30_under_502(self):
+        self.assertEqual(calculate_order(25.94, 5, .15), False)
+
+    def test_coupon_calculation_over_30_under_503(self):
+        self.assertEqual(calculate_order(12, 5, .20), False)
+
+    def test_coupon_calculation_over_30_under_504(self):
+        self.assertEqual(calculate_order(29, 10, .10), False)
+
+    def test_coupon_calculation_over_30_under_505(self):
+        self.assertEqual(calculate_order(17.89, 10, .15), False)
+
+    def test_coupon_calculation_over_30_under_506(self):
+        self.assertEqual(calculate_order(27.62, 10, .20), False)
 
 
 if __name__ == '__main__':
