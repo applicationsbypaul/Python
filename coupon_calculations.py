@@ -19,9 +19,14 @@ def calculate_order(price, cash_coupon, percent_coupon):
         total = total - (total * percent_coupon)
         total = (total * (1 + TAX) + SHIPPING_BETWEEN_30_10)
         return round(total, 2)
+    elif 30 < price <= 50:
+        total = price - cash_coupon
+        total = total - (total * percent_coupon)
+        total = (total * (1 + TAX) + SHIPPING_BETWEEN_30_50)
+        return round(total, 2)
     else:
         return 10000
 
 
 if __name__ == '__main__':
-    print(calculate_order(27.62, 10, .20))
+    print(calculate_order(15.95, 5, .10))

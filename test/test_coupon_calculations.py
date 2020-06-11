@@ -43,22 +43,22 @@ class MyTestCase(unittest.TestCase):
 
     # Testing between 30 and 50
     def test_coupon_calculation_over_30_under_501(self):
-        self.assertEqual(calculate_order(15.95, 5, .10), False)
+        self.assertEqual(calculate_order(35.95, 5, .10), 41.48)
 
     def test_coupon_calculation_over_30_under_502(self):
-        self.assertEqual(calculate_order(25.94, 5, .15), False)
+        self.assertEqual(calculate_order(32.11, 5, .15), 36.38)
 
     def test_coupon_calculation_over_30_under_503(self):
-        self.assertEqual(calculate_order(12, 5, .20), False)
+        self.assertEqual(calculate_order(42.5, 5, .20), 43.75)
 
     def test_coupon_calculation_over_30_under_504(self):
-        self.assertEqual(calculate_order(29, 10, .10), False)
+        self.assertEqual(calculate_order(49.1, 10, .10), 49.25)
 
     def test_coupon_calculation_over_30_under_505(self):
-        self.assertEqual(calculate_order(17.89, 10, .15), False)
+        self.assertEqual(calculate_order(47.17, 10, .15), 45.44)
 
     def test_coupon_calculation_over_30_under_506(self):
-        self.assertEqual(calculate_order(27.62, 10, .20), False)
+        self.assertEqual(calculate_order(44, 10, .20), 40.78)
 
 
 if __name__ == '__main__':
