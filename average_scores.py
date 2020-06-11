@@ -1,7 +1,7 @@
 """
 Program: average_scores.py
 Author: Paul Ford
-Last date modified: 06/6/2020
+Last date modified: 06/10/2020
 Purpose: gather user information
 display average score with information
 """
@@ -19,4 +19,7 @@ def average(score1, score2, score3):
 
 
 if __name__ == '__main__':
-    pass
+    try:
+        print(average(10, 20, 30))
+    except:
+        print('Please enter all positive integers.')

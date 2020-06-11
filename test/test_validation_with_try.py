@@ -1,3 +1,11 @@
+"""
+Program: test_validation_with_try.py
+Author: Paul Ford
+Last date modified: 06/10/2020
+Purpose: gather user information
+display average score with information
+"""
+
 import unittest
 
 from average_scores import average
