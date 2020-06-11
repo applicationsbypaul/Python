@@ -13,6 +13,8 @@ def average(score1, score2, score3):
         raise ValueError
     elif score2 < 0:
         raise ValueError
+    elif score3 < 0:
+        raise ValueError
     return float((score1 + score2 + score3) / NUMBER_TESTS)
 
 
