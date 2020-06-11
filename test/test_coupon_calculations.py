@@ -1,3 +1,9 @@
+"""
+Program: test_coupon_calculations.py
+Author: Paul Ford
+Last date modified: 06/10/2020
+Testing calculated calculations..
+"""
 import unittest
 
 from TOP3.coupon_calculations import calculate_order
